@@ -1,0 +1,6 @@
+*.class
+/bin/
+/build/
+.metadata/
+.idea/
+*.iml

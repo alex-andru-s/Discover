@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" prefHeight="600.0" prefWidth="650.0" styleClass="settings-root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsController">
+
+    <children>
+
+        <BorderPane maxHeight="600.0" maxWidth="650.0" minHeight="600.0" minWidth="650.0" styleClass="settings-container">
+
+            <top>
+
+                <VBox alignment="CENTER" spacing="5">
+
+                    <padding>
+                        <Insets bottom="20" left="25" right="25" top="25" />
+                    </padding>
+
+                    <Label fx:id="labelTitle" styleClass="settings-title" text="PLAYER SETTINGS" />
+
+                    <Label fx:id="labelSecondaryTitle" styleClass="settings-subtitle" text="Manage your player account and progress" />
+
+                </VBox>
+
+            </top>
+
+ <center>
+
+                <VBox spacing="18">
+
+                    <padding>
+                        <Insets bottom="10" left="30" right="30" top="10" />
+                    </padding>
+
+                    <VBox fx:id="boxRename" spacing="8" styleClass="settings-section">
+
+                        <padding>
+                            <Insets bottom="15" left="18" right="18" top="15" />
+                        </padding>
+
+                        <Label fx:id="labelPlayerName" styleClass="section-title" text="PLAYER NAME" />
+
+                        <Label fx:id="labelPlayerDescription" styleClass="section-description" text="Change the name associated with your player." />
+
+                        <HBox spacing="10">
+
+                            <TextField fx:id="nameField" prefHeight="40" prefWidth="400" promptText="Enter new player name" styleClass="settings-text-field" />
+
+                            <Button fx:id="btnRename" onAction="#renamePlayer" prefHeight="40" prefWidth="130" styleClass="primary-button" text="Rename" />
+
+                        </HBox>
+
+                    </VBox>
+
+                    <VBox spacing="8" styleClass="settings-section">
+
+                        <padding>
+                            <Insets bottom="15" left="18" right="18" top="15" />
+                        </padding>
+
+                        <Label fx:id="labelPlayerProgress" styleClass="section-title" text="PLAYER PROGRESS" />
+
+                        <Label fx:id="labelProgressDescription" styleClass="section-description" text="Remove all learned cards, answers and statistics." />
+
+                        <Button fx:id="btnReset" onAction="#resetPlayerData" prefHeight="40" prefWidth="180" styleClass="secondary-button" text="Reset Progress" />
+
+                    </VBox>
+
+                    <VBox fx:id="boxDelete" spacing="8" styleClass="danger-section">
+
+                        <padding>
+                            <Insets bottom="15" left="18" right="18" top="15" />
+                        </padding>
+
+                        <Label fx:id="labelDelete" styleClass="danger-title" />
+
+                        <Label fx:id="labelDeleteDescription" styleClass="section-description" text="Deleting your player permanently removes your player data." />
+
+                        <Button fx:id="btnDeletePlayer" onAction="#deletePlayer" prefHeight="40" prefWidth="180" styleClass="danger-button" text="Delete Player" />
+
+                    </VBox>
+               <Label fx:id="messageLabel" alignment="CENTER" contentDisplay="CENTER" minHeight="25.0" minWidth="600.0" textAlignment="CENTER" textFill="#fa3a3a" />
+
+                </VBox>
+
+            </center>
+
+            <bottom>
+
+                <HBox alignment="CENTER_RIGHT" spacing="12">
+
+                    <padding>
+                        <Insets bottom="20" left="30" right="30" top="15" />
+                    </padding>
+
+                </HBox>
+
+            </bottom>
+
+        </BorderPane>
+
+    </children>
+
+</StackPane>

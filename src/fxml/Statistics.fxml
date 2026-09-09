@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.StatisticsController">
+
+    <children>
+
+        <BorderPane styleClass="statistics-root">
+
+            <top>
+
+                <VBox spacing="8">
+
+                    <padding>
+                        <Insets bottom="20" left="30" right="30" top="25" />
+                    </padding>
+
+                    <Label fx:id="labelTitle" styleClass="page-title" text="STATISTICS" textAlignment="CENTER" />
+
+                    <Label fx:id="playerLabel" styleClass="page-subtitle" text="Player statistics" />
+
+                </VBox>
+
+            </top>
+            <center>
+
+                        <VBox alignment="CENTER" fillWidth="false" spacing="20" styleClass="statistics-root-center">
+
+                            <padding>
+                          <Insets bottom="30" left="30" right="30" top="10" />
+                      </padding>
+
+                            <GridPane hgap="30.0" vgap="18.0">
+
+                                <VBox alignment="CENTER" spacing="8" styleClass="stat-card" GridPane.columnIndex="0" GridPane.rowIndex="0">
+
+                                    <Label styleClass="stat-icon" text="🃏" />
+
+                                    <Label fx:id="cardsLearnedLabel" styleClass="stat-number" text="0" />
+
+                                    <Label fx:id="labelLearned" styleClass="stat-label" text="Cards Learned" />
+
+                                </VBox>
+
+                                <VBox alignment="CENTER" spacing="8" styleClass="stat-card" GridPane.columnIndex="1" GridPane.rowIndex="0">
+
+                                    <Label styleClass="stat-icon" text="🎯" />
+
+                                    <Label fx:id="attemptsLabel" styleClass="stat-number" text="0" />
+
+                                    <Label fx:id="labelAttempts" styleClass="stat-label" text="Total Attempts" />
+
+                                </VBox>
+
+                                <VBox alignment="CENTER" spacing="8" styleClass="stat-card" GridPane.columnIndex="2" GridPane.rowIndex="0">
+
+                                    <Label styleClass="stat-icon" text="✓" />
+
+                                    <Label fx:id="correctLabel" styleClass="stat-number" text="0" />
+
+                                    <Label fx:id="labelCorrect" styleClass="stat-label" text="Correct Answers" />
+
+                                </VBox>
+
+                                <VBox alignment="CENTER" spacing="8" styleClass="stat-card" GridPane.columnIndex="0" GridPane.rowIndex="1">
+
+                                    <Label styleClass="stat-icon" text="✕" />
+
+                                    <Label fx:id="wrongLabel" styleClass="stat-number" text="0" />
+
+                                    <Label fx:id="labelWrong" styleClass="stat-label" text="Wrong Answers" />
+
+                                </VBox>
+
+                                <VBox alignment="CENTER" spacing="10" styleClass="stat-card" GridPane.columnIndex="1" GridPane.rowIndex="1">
+
+                                    <Label fx:id="labelAccuracy" styleClass="stat-label" text="Accuracy" />
+
+                                    <ProgressIndicator fx:id="accuracyIndicator" prefHeight="120.0" prefWidth="120.0" style="-fx-text-background-color: #00000000;">
+                        <VBox.margin>
+                           <Insets />
+                        </VBox.margin>
+                     </ProgressIndicator>
+
+                                    <Label fx:id="accuracyLabel" styleClass="stat-number-small" text="0%" />
+
+                                </VBox>
+
+                                <VBox alignment="CENTER" spacing="8.0" styleClass="stat-card" GridPane.columnIndex="2" GridPane.rowIndex="1">
+
+                                    <Label styleClass="stat-icon" text="⭐" />
+
+                                    <Label fx:id="levelLabel" styleClass="stat-number-small" text="Level 1" />
+
+                                    <Label fx:id="labelLevelCurrent" styleClass="stat-label" text="Current Level" />
+
+                                </VBox>
+                  <columnConstraints>
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                     <ColumnConstraints />
+                  </columnConstraints>
+                  <rowConstraints>
+                     <RowConstraints />
+                     <RowConstraints />
+                  </rowConstraints>
+
+                            </GridPane>
+
+                            <VBox spacing="12.0" styleClass="progress-card">
+
+                                <Label fx:id="labelLearnProgress" styleClass="section-title" text="Learning Progress" />
+
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+
+                                    <Label fx:id="labelCards" prefWidth="100" text="Cards" textFill="WHITE" />
+
+                                    <ProgressBar fx:id="learningProgress" prefWidth="400" progress="0" />
+
+                                    <Label fx:id="learningProgressLabel" text="0%" textFill="WHITE" />
+
+                                </HBox>
+                  <VBox.margin>
+                     <Insets />
+                  </VBox.margin>
+                  <padding>
+                     <Insets right="-10.0" />
+                  </padding>
+
+                            </VBox>
+
+      
+                            <VBox spacing="12" styleClass="progress-card">
+
+                                <Label fx:id="labelStudyProgress" styleClass="section-title" text="Study Progress" />
+
+                                <HBox alignment="CENTER_LEFT" spacing="15">
+
+                                    <Label fx:id="labelStudy" prefWidth="100" text="Study" textFill="WHITE" />
+
+                                    <ProgressBar fx:id="studyProgress" prefWidth="400" progress="0" />
+
+                                    <Label fx:id="studyProgressLabel" text="0%" textFill="WHITE" />
+
+                                </HBox>
+                  <padding>
+                     <Insets right="-10.0" />
+                  </padding>
+
+                            </VBox>
+
+                        </VBox>
+
+            </center>
+
+        </BorderPane>
+
+    </children>
+
+</StackPane>

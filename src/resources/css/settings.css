@@ -1,0 +1,162 @@
+.settings-root {
+    -fx-background-color: transparent;
+}
+
+.settings-container {
+    -fx-background-color: rgba(15, 20, 35, 0.96);
+
+    -fx-background-radius: 20;
+
+    -fx-border-color: rgba(255, 255, 255, 0.18);
+    -fx-border-width: 1;
+    -fx-border-radius: 20;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(0, 0, 0, 0.55),
+        25,0,0,8);
+}
+
+.settings-title {
+    -fx-text-fill: white;
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+}
+
+.settings-subtitle {
+    -fx-text-fill: #9da9c9;
+    -fx-font-size: 13px;
+}
+
+.settings-section {
+    -fx-background-color: rgba(255, 255, 255, 0.06);
+
+    -fx-background-radius: 15;
+
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+}
+
+
+.section-title {
+    -fx-text-fill: white;
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+}
+
+.section-description {
+    -fx-text-fill: #68738f;
+    -fx-font-size: 11px;
+}
+
+
+.settings-text-field {
+    -fx-background-color: rgba(0, 0, 0, 0.30);
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #68738f;
+
+    -fx-background-radius: 8;
+
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+
+    -fx-padding: 0 12 0 12;
+
+    -fx-font-size: 13px;
+}
+
+.settings-text-field:focused {
+    -fx-border-color: #6c8cff;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(108, 140, 255, 0.25),
+        8,0,0,0);
+}
+
+
+.primary-button {
+    -fx-background-color: #4f6ef7;
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 8;
+
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #6380ff;
+}
+
+.primary-button:pressed {
+    -fx-background-color: #405ed8;
+}
+
+.secondary-button {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+
+    -fx-text-fill: #dce2f2;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 8;
+
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-width: 1;
+    -fx-border-radius: 8;
+
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.14);
+}
+
+.danger-section {
+    -fx-background-color: rgba(255, 70, 70, 0.06);
+
+    -fx-background-radius: 15;
+
+    -fx-border-color: rgba(255, 90, 90, 0.25);
+    -fx-border-width: 1;
+    -fx-border-radius: 15;
+}
+
+.danger-title {
+    -fx-text-fill: #ff7070;
+
+    -fx-font-size: 13px;
+
+    -fx-font-weight: bold;
+}
+
+
+.danger-button {
+    -fx-background-color: rgba(220, 60, 60, 0.85);
+
+    -fx-text-fill: white;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 8;
+
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: #e05252;
+}
+
+.danger-button:pressed {
+    -fx-background-color: #b83d3d;
+}

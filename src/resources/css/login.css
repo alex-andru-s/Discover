@@ -1,0 +1,113 @@
+
+/* Main buttons */
+.center-menu{
+	-fx-background-color: transparent;
+}
+
+.primary-button {
+	-fx-background-color:
+	       rgba(255,255,255,0.08);
+	   
+	   -fx-text-color: white;
+
+	   -fx-font-size: 12px;
+
+	   -fx-font-weight: bold;
+
+	   -fx-background-radius: 10px;
+
+	   -fx-border-radius: 10px;
+
+	   -fx-border-color:
+	       rgba(255,255,255,0.06);
+
+	   -fx-padding: 8px 15px;
+
+	   -fx-cursor: hand;
+
+	   -fx-alignment: CENTER;
+
+	   -fx-pref-width: 165px;
+}
+
+.primary-button:hover {
+	-fx-background-color:
+	       rgba(255,255,255,0.20);
+
+	   -fx-border-color:
+	       rgba(255,255,255,0.22);
+
+	   -fx-scale-x: 1.03;
+
+	   -fx-scale-y: 1.03;
+}
+.primary-button:pressed {
+     
+	-fx-background-color:
+	           rgba(255,255,255,0.28);
+    -fx-scale-x: 0.98;
+
+	 -fx-scale-y: 0.98;
+	
+}
+
+/* Quit button */
+.close-button {
+	-fx-background-color:
+		       rgba(255,255,255,0.08);
+    -fx-border-color:
+		       rgba(255,255,255,0.06);
+    -fx-font-weight: bold;
+	-fx-alignment: CENTER;
+	-fx-background-radius: 10px;
+	-fx-border-radius: 10px;
+	-fx-padding: 8px 15px;
+    -fx-background-radius: 10px;
+	
+    -fx-text-fill: #aab4ca;
+    -fx-font-size: 12px;
+    -fx-cursor: hand;
+	-fx-pref-width: 165px;
+}
+
+.close-button:hover {
+    -fx-background-color: #4d0813;
+    -fx-border-color: #bd1923;
+    -fx-text-fill: white;
+}
+
+.close-button:pressed {
+    -fx-background-color: #252e45;
+}
+
+/* Language button */
+.language-button{
+	-fx-background-color:
+	       rgba(255,255,255,0.08);
+
+	   -fx-background-radius: 30px;
+	   -fx-border-radius: 30px;
+	   -fx-border-color: transparent;   
+	   
+	   -fx-cursor: hand;
+	   
+	   -fx-alignment: CENTER;
+	   
+	   -fx-min-width: 30px;
+	   -fx-max-width: 30px;
+	   -fx-min-height: 30px;
+	   -fx-max-height: 30px;
+}
+
+.language-button:hover {
+	-fx-background-color:
+		       rgba(255,255,255,0.20);
+
+		   -fx-border-color: transparent;
+
+		   -fx-scale-x: 1.03;
+
+		   -fx-scale-y: 1.03;
+	}
+
+}

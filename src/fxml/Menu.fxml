@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane id="root" fx:id="root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+
+    <children>
+
+
+        <HBox fx:id="mainContainer" fillHeight="true" spacing="0">
+
+            <children>
+
+                <VBox fx:id="menuButtons" alignment="TOP_CENTER" maxWidth="260" minWidth="190" prefWidth="220" spacing="12" styleClass="side-menu">
+
+                    <padding>
+                        <Insets bottom="25" left="20" right="20" top="30" />
+                    </padding>
+
+                    <children>
+                    
+                        <Label fx:id="titleLabel" styleClass="main-title" text="DISCOVER" />
+
+                        <Region prefHeight="20" />
+
+                        <Button fx:id="learnButton" maxWidth="Infinity" onAction="#openLearn" styleClass="menu-button" text="Learn" />
+
+                        <Button fx:id="playButton" maxWidth="Infinity" onAction="#openPlay" styleClass="menu-button" text="Give Your Answers" />
+
+                        <Button fx:id="languageButton" maxWidth="Infinity" onAction="#openLearnLanguages" styleClass="menu-button" text="Learn New Language" />
+
+                        <Button fx:id="collectionButton" maxWidth="Infinity" onAction="#openCollection" styleClass="menu-button" text="Collection" />
+
+                        <Button fx:id="statisticsButton" maxWidth="Infinity" onAction="#openStatistics" styleClass="menu-button" text="Statistics" />
+
+                        <Button fx:id="createButton" maxWidth="Infinity" onAction="#openAddCard" styleClass="menu-button" text="Add Card" />
+                        <Button fx:id="manageButton" layoutX="30.0" layoutY="250.0" maxWidth="Infinity" onAction="#openRemoveEditCard" styleClass="menu-button" text="Edit/Remove Card" />
+
+                        <Button fx:id="settingsButton" maxWidth="Infinity" onAction="#openSettings" styleClass="menu-button" text="Settings" />
+
+                        <Region VBox.vgrow="ALWAYS" />
+
+                        <Button fx:id="logoutButton" maxWidth="Infinity" onAction="#logout" styleClass="logout-button" text="Logout" />
+                    </children>
+
+                </VBox>
+
+
+                <VBox fx:id="rightArea" spacing="10" styleClass="right-area" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                    <padding>
+                        <Insets bottom="15" left="15" right="15" top="15" />
+                    </padding>
+
+                  <children>
+                     <StackPane fx:id="contentArea" styleClass="content-area" VBox.vgrow="ALWAYS">
+                        <children>
+                          <VBox prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <HBox fx:id="playerBar" alignment="CENTER_RIGHT" maxHeight="35.0" minHeight="30.0" prefHeight="35.0" prefWidth="590.0" spacing="15" styleClass="player-bar">
+                                 <padding>
+                                     <Insets bottom="12.0" left="20.0" right="20.0" top="12.0" />
+                                   </padding>
+            
+                                   <children>
+                                      <Region HBox.hgrow="ALWAYS" />
+                                      <Label fx:id="playerNameLabel" styleClass="player-name" text="Player" />
+                                      <Label styleClass="player-separator" text="•" />
+                                      <Label fx:id="levelLabel" styleClass="level-label" text="Level 1" />
+                                   </children>
+                                 </HBox>
+                           </children>
+                        </VBox>
+
+
+               <VBox fx:id="dashboardView" alignment="CENTER" prefWidth="590.0" spacing="25.0" styleClass="dashboard-view">
+                 <padding>
+                   <Insets bottom="35.0" left="35.0" right="35.0" top="35.0" />
+                 </padding>
+                 <children>
+                     <Label fx:id="welcomeLabel" styleClass="welcome-title" text="Welcome!" />
+                     <HBox alignment="CENTER" spacing="20">
+                        <children>
+                          <VBox alignment="CENTER" prefHeight="180" prefWidth="150" spacing="10" styleClass="dashboard-card">
+                             <children>
+                                <Label styleClass="dashboard-icon" text="📖" />
+                                  <ProgressIndicator fx:id="completedProgress" minHeight="60.0" minWidth="60.0" prefHeight="75" prefWidth="75" progress="0.0" style="-fx-text-background-color: #00000000;">
+                                    <effect>
+                                      <ColorAdjust hue="-0.1" saturation="1.0" />
+                                    </effect></ProgressIndicator>
+                                    <Label fx:id="completedValueLabel" styleClass="progress-value" text="0" />
+                                    <Label fx:id="labelLearned" styleClass="dashboard-label" text="Cards Learned" />
+                               </children>
+                             </VBox>
+
+           <VBox alignment="CENTER" prefHeight="180" prefWidth="150" spacing="10" styleClass="dashboard-card">
+               <children>
+                 <Label styleClass="dashboard-icon" text="⭐" />
+                 <ProgressIndicator fx:id="pointsProgress" minHeight="60.0" minWidth="60.0" prefHeight="75.0" prefWidth="75.0" progress="0" style="-fx-text-background-color: #00000000;">
+                   <effect>
+                     <ColorAdjust hue="-0.1" saturation="1.0" />
+                   </effect></ProgressIndicator>
+                   <Label fx:id="pointsValueLabel" styleClass="progress-value" text="0" />
+                   <Label fx:id="labelPoints" styleClass="dashboard-label" text="Points" />
+                </children>
+            </VBox>
+            
+            <VBox alignment="CENTER" prefHeight="180" prefWidth="150" spacing="10" styleClass="dashboard-card">
+               <children>
+                  <Label styleClass="dashboard-icon" text="🎯" />
+                    <ProgressIndicator fx:id="accuracyProgress" minHeight="60.0" minWidth="60.0" prefHeight="75.0" prefWidth="75.0" progress="0.0" style="-fx-text-background-color: #00000000;">
+                    <effect>
+                      <ColorAdjust hue="-0.1" saturation="1.0" />
+                    </effect></ProgressIndicator>
+                    <Label fx:id="accuracyValueLabel" styleClass="progress-value" text="0%" />
+                    <Label fx:id="labelAccuracy" styleClass="dashboard-label" text="Accuracy" />
+                 </children>
+              </VBox>
+                      
+                      
+                                               </children>
+                                          </HBox>
+
+                                    </children>
+
+                                </VBox>
+
+                            </children>
+
+                        </StackPane>
+
+                    </children>
+
+                </VBox>
+
+            </children>
+
+        </HBox>
+
+    </children>
+
+</StackPane>

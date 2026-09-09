@@ -1,0 +1,80 @@
+.collection-root {
+    -fx-background-color: rgba(30, 30, 30, 0.55);
+    -fx-background-radius: 18px;
+}
+
+.collection-title {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+}
+
+.collection-count {
+    -fx-font-size: 15px;
+    -fx-text-fill: #9fdcff;
+}
+
+.collection-scroll {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.collection-scroll > .viewport {
+    -fx-background-color: transparent;
+}
+
+.collection-card {
+    -fx-background-color: rgba(255, 255, 255, 0.10);
+
+    -fx-background-radius: 18px;
+
+    -fx-border-color: rgba(255, 255, 255, 0.18);
+    -fx-border-width: 1px;
+    -fx-border-radius: 18px;
+
+    -fx-padding: 15px;
+
+    -fx-cursor: hand;
+	-fx-border-width: 2px 0px 0px 0px;
+}
+
+.collection-card:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+
+    -fx-border-color: #8fd3ff;
+
+    -fx-scale-x: 1.04;
+    -fx-scale-y: 1.04;
+	-fx-border-width: 4px 0px 0px 0px;
+}
+
+.collection-card-name {
+    -fx-font-size: 19px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+	-fx-font-features: "cpsp" on;
+}
+
+.collection-card-description {
+    -fx-font-size: 13px;
+    -fx-text-fill: #cccccc;
+	-fx-text-alignment: center; 
+	-fx-alignment: center;  
+}
+
+.collection-card-accuracy {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8fd3ff;
+}
+
+.collection-card-status {
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #8cff9b;
+}
+
+.collection-empty {
+    -fx-font-size: 18px;
+    -fx-text-fill: #aaaaaa;
+}

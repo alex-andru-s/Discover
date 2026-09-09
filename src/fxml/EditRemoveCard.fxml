@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" prefHeight="700.0" prefWidth="750.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CardManagementController">
+
+    <children>
+
+        <BorderPane maxHeight="700.0" maxWidth="750.0" minHeight="700.0" minWidth="750.0" styleClass="card-editor-root">
+
+            <top>
+                <VBox alignment="CENTER" spacing="5">
+
+                    <padding>
+                        <Insets bottom="15" left="20" right="20" top="20" />
+                    </padding>
+
+                    <Label fx:id="labelTitle" styleClass="editor-title" text="EDIT / REMOVE CARD" />
+
+                    <Label fx:id="labelSecondaryTitle" styleClass="editor-subtitle" text="Select a card to edit or remove" />
+                </VBox>
+            </top>
+
+           <center>
+
+                <VBox spacing="15">
+
+                    <padding>
+                        <Insets bottom="5" left="25" right="25" top="5" />
+                    </padding>
+
+                    <HBox alignment="CENTER" spacing="25">
+
+                        <VBox alignment="CENTER" prefWidth="230" spacing="12" styleClass="preview-panel">
+
+                            <padding>
+                                <Insets bottom="15" left="15" right="15" top="15" />
+                            </padding>
+
+                            <Label fx:id="labelCardPreview" styleClass="preview-title" text="CARD PREVIEW" />
+
+                            <StackPane prefHeight="190" prefWidth="190" styleClass="image-container">
+
+                                <ImageView fx:id="imagePreview" fitHeight="175" fitWidth="175" preserveRatio="true" />
+
+                                <Label fx:id="imagePlaceholder" styleClass="image-placeholder" text="No image" />
+
+                            </StackPane>
+
+                            <Button fx:id="btnChangeImage" onAction="#selectImage" prefWidth="170" styleClass="editor-button" text="Change Image" />
+
+                            <Button fx:id="btnChangeSound" onAction="#selectSound" prefWidth="170" styleClass="editor-button" text="Change Sound" />
+
+                            <Label fx:id="soundLabel" styleClass="sound-label" text="No sound selected" wrapText="true" />
+
+                        </VBox>
+
+                        <VBox alignment="CENTER" prefWidth="410" spacing="10">
+      
+
+                          <VBox prefWidth="410" spacing="7">
+      
+                              <Label fx:id="labelSelectCard" styleClass="section-label" text="Select Card" />
+      
+                              <ComboBox fx:id="cardComboBox" prefHeight="40.0" prefWidth="411.0" promptText="Select a card" styleClass="editor-combo" />
+      
+                          </VBox>
+
+                            <ComboBox fx:id="languageComboBox" prefHeight="40" prefWidth="410" promptText="Select language" styleClass="editor-combo" />
+
+
+                            <Label fx:id="labelCardTitle" styleClass="section-label" text="Card Title" />
+
+                            <TextField fx:id="titleField" prefHeight="40" promptText="Card title" styleClass="editor-text-field" />
+
+
+                            <Label fx:id="labelDescription" styleClass="section-label" text="Description" />
+
+                            <TextArea fx:id="descriptionField" prefHeight="80" prefWidth="410" promptText="Card description..." styleClass="editor-text-area" wrapText="true" />
+
+
+                            <Label fx:id="messageLabel" styleClass="message-label" wrapText="true" />
+
+                        </VBox>
+
+                    </HBox>
+
+                </VBox>
+
+            </center>
+
+            <bottom>
+
+                <HBox alignment="CENTER_RIGHT" spacing="12">
+
+                    <padding>
+                        <Insets bottom="20" left="25" right="25" top="15" />
+                    </padding>
+
+                    <Button fx:id="btnCancel" onAction="#cancel" prefWidth="100" styleClass="secondary-button" text="Cancel" />
+
+                    <Button fx:id="btnRemoveCard" onAction="#removeCard" prefWidth="140" styleClass="remove-button" text="Remove Card" />
+
+                    <Button fx:id="btnSaveChanges" onAction="#updateCard" prefWidth="150" styleClass="primary-button" text="Save Changes" />
+
+                </HBox>
+
+            </bottom>
+
+        </BorderPane>
+
+    </children>
+
+</StackPane>

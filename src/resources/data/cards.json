@@ -1,0 +1,117 @@
+{
+  "3": {
+    "id": 3,
+    "category": "TOOL_OBJECT_PROCESSED",
+    "cardData": {
+      "imagePath": "src/resources/image/knife.jpg",
+      "translation": {
+        "ITALIAN": {
+          "description": "taglia aa",
+          "name": "COLTELLO",
+          "language": "ITALIAN"
+        },
+        "ENGLISH": {
+          "description": "cuttt",
+          "name": "KNIFE",
+          "language": "ENGLISH"
+        }
+      }
+    }
+  },
+  "4": {
+    "id": 4,
+    "category": "COMPLEX_INFRASTRUCTURE",
+    "cardData": {
+      "imagePath": "src/resources/image/house.jpg",
+      "translation": {
+        "ITALIAN": {
+          "description": "prottegia",
+          "name": "CASA",
+          "language": "ITALIAN"
+        },
+        "ENGLISH": {
+          "description": "protect",
+          "name": "HOUSE",
+          "language": "ENGLISH"
+        }
+      }
+    }
+  },
+  "5": {
+    "id": 5,
+    "category": "ANIMAL_KINGDOM",
+    "cardData": {
+      "imagePath": "src/resources/image/cat.jpg",
+      "soundPath": "src/resources/sound/catsound.mp3",
+      "translation": {
+        "ITALIAN": {
+          "description": "dorme",
+          "name": "GATTO",
+          "language": "ITALIAN"
+        },
+        "ENGLISH": {
+          "description": "sleep slep",
+          "name": "CAT",
+          "language": "ENGLISH"
+        }
+      }
+    }
+  },
+  "6": {
+    "id": 6,
+    "category": "PROCESSED_BIOLOGICAL",
+    "cardData": {
+      "imagePath": "src/resources/image/honey.jpg",
+      "translation": {
+        "ITALIAN": {
+          "description": "dolce",
+          "name": "Miele",
+          "language": "ITALIAN"
+        },
+        "ENGLISH": {
+          "description": "sweet",
+          "name": "HONEY",
+          "language": "ENGLISH"
+        }
+      }
+    }
+  },
+  "7": {
+    "id": 7,
+    "category": "STATES_WATER",
+    "cardData": {
+      "imagePath": "src/resources/image/river.jpg",
+      "translation": {
+        "ITALIAN": {
+          "description": "blu",
+          "name": "FIUME",
+          "language": "ITALIAN"
+        },
+        "ENGLISH": {
+          "description": "blu",
+          "name": "RIVER",
+          "language": "ENGLISH"
+        }
+      }
+    }
+  },
+  "8": {
+    "id": 8,
+    "category": "ANIMAL_KINGDOM",
+    "cardData": {
+      "imagePath": "src/resources/image/lion.jpg",
+      "translation": {
+        "ENGLISH": {
+          "description": "eat",
+          "name": "LION",
+          "language": "ENGLISH"
+        },
+        "ITALIAN": {
+          "description": "mangia",
+          "name": "LEONE",
+          "language": "ITALIAN"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane fx:id="root" styleClass="learn-root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LearnController">
+
+    <children>
+
+        <BorderPane maxHeight="750" maxWidth="1480.0" prefHeight="700" prefWidth="950" styleClass="game-container">
+
+            <top>
+                <VBox spacing="10" BorderPane.alignment="CENTER">
+                    <padding>
+                    <Insets bottom="15" left="15" right="15" top="15" />
+                    </padding>
+
+                    <HBox alignment="CENTER_LEFT" spacing="15">
+
+                        <Label fx:id="LabelCategory" styleClass="screen-title" text="Learn about :" />
+
+                        <Label fx:id="categoryTitle" styleClass="category-title" text="Category" />
+
+                        <HBox HBox.hgrow="ALWAYS" />
+
+                        <Label fx:id="cardCounter" styleClass="card-counter" text="1 / 10" />
+
+                    </HBox>
+               <VBox maxWidth="1.7976931348623157E308" prefHeight="20.0">
+                  <children>
+      
+                             <ProgressBar fx:id="progressBar" depthTest="DISABLE" maxWidth="1.7976931348623157E308" prefWidth="20.0" progress="0" styleClass="learn-progress" />
+                  </children>
+               </VBox>
+
+                </VBox>
+
+            </top>
+
+            <center>
+
+                <VBox alignment="CENTER" spacing="20" BorderPane.alignment="CENTER">
+
+                  <ScrollPane fx:id="categoryScroll" fitToHeight="true" fitToWidth="true" hbarPolicy="AS_NEEDED" prefHeight="105" styleClass="category-scroll" vbarPolicy="NEVER">
+
+                        <content>
+
+                          <HBox fx:id="contentCategoryContainer" alignment="CENTER" spacing="12">
+                                <padding>
+                                <Insets bottom="10" left="10" right="10" top="10" />
+                                </padding>
+
+                            </HBox>
+
+                        </content>
+
+                    </ScrollPane>
+
+                  <StackPane fx:id="cardContainer" maxHeight="410" maxWidth="760" prefHeight="410" prefWidth="760" styleClass="learning-card">
+
+                        <children>
+
+                            <VBox alignment="CENTER" spacing="15">
+                                <padding>
+                                <Insets bottom="25" left="25" right="25" top="25" />
+                                </padding>
+
+                              <StackPane fx:id="imageContainer" maxHeight="220" maxWidth="300" prefHeight="220" prefWidth="300" styleClass="card-image-container">
+
+                                    <ImageView fx:id="image" fitHeight="200" fitWidth="280" preserveRatio="true" smooth="true" />
+
+                                </StackPane>
+
+                                <Label fx:id="cardName" styleClass="card-name" text="Card Name" wrapText="true" />
+
+
+                                <Label fx:id="description" alignment="CENTER" maxWidth="650" styleClass="card-description" text="Description" wrapText="true" />
+
+                                <Button fx:id="soundButton" onAction="#playSound" styleClass="sound-button" text="Play Sound" />
+
+                            </VBox>
+
+                        </children>
+
+                    </StackPane>
+
+                </VBox>
+
+            </center>
+
+            <bottom>
+
+                <VBox alignment="CENTER" spacing="12">
+                    <padding>
+                    <Insets bottom="15" left="15" right="15" top="15" />
+                    </padding>
+
+                    <Separator />
+
+                    <HBox alignment="CENTER" spacing="25">
+
+                        <Button fx:id="previousButton" onAction="#previousCard" prefWidth="160.0" styleClass="navigation-button" text="Previous" />
+
+                        <Button fx:id="returnToMenu" onAction="#returnToMenu" prefWidth="180.0" styleClass="menu-button" text="Menu" />
+                        
+
+                        <Button fx:id="nextButton" onAction="#nextCard" prefWidth="160.0" styleClass="navigation-button" text="Next" />
+
+                    </HBox>
+
+                </VBox>
+
+            </bottom>
+
+        </BorderPane>
+
+    </children>
+
+</StackPane>

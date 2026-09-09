@@ -1,0 +1,126 @@
+.add-card-root {
+   -fx-background-color: transparent;
+}
+
+.add-card-children{	
+	-fx-background-color: rgba(15,20,35,0.96);                                  
+	-fx-background-radius: 20;                                  
+    -fx-border-color: rgba(255,255,255,0.18);                                  
+	-fx-border-width: 1;                                  
+	-fx-border-radius: 20;                                  
+	-fx-effect: dropshadow(gaussian, rgba(0,0,0,0.55), 25,0,0,8);
+}
+.primary-button {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-text-fill: #aab4ca;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-padding: 8 15;
+
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+
+    -fx-border-color: rgba(255, 255, 255, 0.20);
+
+    -fx-text-fill: white;
+}
+
+.editor-button {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+
+    -fx-border-color: rgba(255, 255, 255, 0.06);
+
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+
+    -fx-text-fill: #aab4ca;
+
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+
+    -fx-cursor: hand;
+}
+
+.editor-button:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.18);
+
+    -fx-border-color: rgba(255, 255, 255, 0.20);
+
+    -fx-text-fill: white;
+}
+.section-label {
+    -fx-text-fill: #9da9c9;
+    -fx-font-size: 12px;
+    -fx-font-weight: bold;
+}
+
+.editor-text-field {
+    -fx-background-color: rgba(255, 255, 255, 0.08);
+
+    -fx-background-radius: 10;
+
+    -fx-border-color: rgba(255, 255, 255, 0.12);
+    -fx-border-radius: 10;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #68738f;
+
+    -fx-font-size: 12px;
+
+    -fx-padding: 8 12 8 12;
+}
+
+.editor-text-field:hover {
+    -fx-background-color: rgba(255, 255, 255, 0.12);
+
+    -fx-border-color: rgba(255, 255, 255, 0.20);
+}
+
+.editor-text-field:focused {
+    -fx-border-color: rgba(255, 255, 255, 0.35);
+}
+.editor-text-area {
+	
+   -fx-background-color: rgba(15, 20, 35, 0.96);
+	
+    -fx-background-radius: 10;
+
+    -fx-border-color: transparent;
+	
+    -fx-border-radius: 10;
+
+    -fx-text-fill: white;
+
+    -fx-prompt-text-fill: #68738f;
+
+    -fx-font-size: 12px;
+	
+}
+
+.editor-text-area .content {
+	
+    -fx-background-color: rgba(15, 20, 35, 0.96);
+	-fx-border-radius: 10;
+
+}
+
+.editor-text-area:focused {
+	
+	-fx-background-color: rgba(255, 255, 255, 0.22);
+
+	  
+}
+
+

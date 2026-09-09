@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox fx:id="root" alignment="CENTER" prefHeight="700" prefWidth="700" spacing="15" styleClass="language-game-root" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LanguageLearnController">
+
+    <padding>
+        <Insets bottom="30" left="40" right="40" top="30" />
+    </padding>
+
+
+    <Label fx:id="labelTitle" styleClass="game-title" text="LANGUAGE GAME" />
+
+
+    <ImageView fx:id="cardImage" fitHeight="250" fitWidth="300" preserveRatio="true" styleClass="game-image" />
+
+
+    <Label fx:id="mainNameLabel" styleClass="native-name" text="Lion" />
+
+
+    <Label fx:id="secondaryNameLabel" styleClass="secondary-name" text="Leone" />
+   <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+      <children>
+      
+      
+          <TextField fx:id="answerField" minWidth="300.0" promptText="Inserisci la traduzione..." styleClass="answer-field" />
+      </children>
+   </HBox>
+
+
+    <Button fx:id="confirmButton" onAction="#confirmAnswer" prefWidth="180" styleClass="primary-button" text="CONFERMA" />
+
+
+    <Button fx:id="nextButton" onAction="#nextCard" prefWidth="180" styleClass="primary-button" text="PROSSIMA CARTA" />
+
+
+    <Label fx:id="resultLabel" styleClass="result-label" text="" wrapText="true" />
+
+
+    <Label fx:id="scoreLabel" styleClass="score-label" text="Score: 0" />
+
+
+    <Button fx:id="returnToMenu" onAction="#returnToMenu" prefWidth="180" styleClass="secondary-button" text="TORNA AL MENU" />
+
+</VBox>

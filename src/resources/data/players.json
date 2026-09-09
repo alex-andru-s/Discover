@@ -1,0 +1,134 @@
+{
+  "1": {
+    "id": 1,
+    "name": "ADMIN",
+    "statistics": {
+      "points": 6,
+      "correct": 5,
+      "wrong": 1,
+      "level": 17
+    },
+    "progress": {
+      "8": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 0,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "3": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 0,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "4": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "5": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 4,
+        "wrongAnswers": 1,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "6": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "7": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      }
+    }
+  },
+  "2": {
+    "id": 2,
+    "name": "p",
+    "statistics": {
+      "points": 0,
+      "correct": 0,
+      "wrong": 0,
+      "level": 1
+    },
+    "progress": {
+      "8": {
+        "viewed": true,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 0,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "3": {
+        "viewed": false,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "4": {
+        "viewed": false,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "5": {
+        "viewed": false,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 0,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "6": {
+        "viewed": false,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      },
+      "7": {
+        "viewed": false,
+        "correctAnswersAdv": 0,
+        "wrongAnswersAdv": 0,
+        "correctAnswers": 10,
+        "wrongAnswers": 0,
+        "correctAnswersLang": 0,
+        "wrongAnswersLang": 0
+      }
+    }
+  }
+}
